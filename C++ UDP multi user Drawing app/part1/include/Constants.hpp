@@ -1,0 +1,7 @@
+#ifndef CONSTANTS_HPP
+#define CONSTANTS_HPP
+
+enum Filter {NONE, DITHER, GRAYSCALE, SEPIA, DEFAULT};
+
+
+#endif // CONSTANTS_HPP
