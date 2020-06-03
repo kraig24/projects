@@ -1,19 +1,17 @@
-# TODO Please edit the following information in your assignment
+C++ UDP multi user Drawing app
 
-- Name: cache-me-if-you-can
-- How many hours did it take you to complete this assignment? 5 days
-- Did you collaborate with any other students/TAs/Professors? Derek
-- Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
-- (Optional) What was your favorite part of the assignment?
-- (Optional) How would you improve the assignment?
 
-# Implementation Logistics
+This is a project that utilizes several well known C++ libraries (SFML, Nuklear Catch2) to make a drawing application.
 
-- You may use whatever operating system, IDE, or tools for completing this assignment.
-- In the future there may be restrictions, so please review here.
+There is a server object that is connected via UDP connection to anyone with proper port ID and IP address for the server.
+Then, the program will launch and allow users to each paint on a single canvas, seeing each other's work. The program works
+by sending packets of data containing pixel RGB values to the server, and then the server sends this using the command pattern
+to each of the users connected. 
 
-# Part(s) to this assignment!
+There are an infinite amount of connections available, so long as the server connection is strong enough to run it. I also created a front end menu using Nuklear which can change the paint colors, as well as add different kinds of filters to the drawing (e.g Sepia, greyscale) 
 
-See the folders [part1](./part1) for this assignment.
+If a user presses the z button, they can undo any drawing that they have done. This is done by saving the data continually in a 
+stack, popping a command off when the key is pressed. 
+
+
+I chose a UDP connection for this project because, though UDP is unreliable in terms of packet delivery, it is much faster and scales better with more users. A TCP connection would have been too choppy to create a well rounded user experience. 
