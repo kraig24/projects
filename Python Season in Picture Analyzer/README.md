@@ -7,7 +7,7 @@ The goal of this project was to learn how to make data more simplistic so that i
 I couldn't just compare every pixel in one picture to every pixel in another for each image because 
 
 1) it isn't scalable with large amounts of pictures
-2) it would take fare too long
+2) it would take far too long
 
 
 So, in order to solve this problem, I used the Principle Component Analysis algorithm and turned each image into smaller
