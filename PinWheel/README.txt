@@ -8,6 +8,8 @@ BeautifulSoup
 pip install beautifulsoup4
 #####
 
+This program retrieves relevent IRS forms for you from the web
+
 This program Doesn't take command line arguments (I could add them with argc, argv if needed, but since it is so tiny,
 I just got user input to get the information needed (prompt will ask for one for part 1 answer and 2 for part 2).
 Make sure when running part one that you don't have any spaces between your files, just commas. The part one answer will
